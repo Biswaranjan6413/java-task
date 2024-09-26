@@ -1,0 +1,60 @@
+package FirstArray;
+
+import java.util.ArrayList;
+
+public class ArraylistAdd {
+
+	public static void main(String[] args) {
+		
+		
+		
+		ArrayList<String> studName = new ArrayList<>();
+		studName.add("rakesh");
+		studName.add("milon");
+		studName.add("ranjita");
+		studName.add("sagar");
+		System.out.println(studName);
+		studName.add("biswa");// only add the element
+		System.out.println(studName);
+		
+		// when i add a element in middle ya any where , so
+		studName.add(2,"Anjita");// which line u print index=2, what u print element="anjita"
+		System.out.println(studName);
+		
+		// add a new array inside the old array
+		
+		ArrayList<String> newlist = new ArrayList<>();
+		newlist.add("harsita");
+		newlist.add("sita");
+		studName.addAll(newlist);// here oldlist .addAll(NewList);
+		System.out.println(studName);
+		
+		//Get the Element 
+		System.out.println(studName.get(1));
+		
+		//remove index with name the element 
+		studName.remove(4);// which number index is remove the element, put the number index
+		System.out.println(studName);
+		
+		// remove the value not index 
+		studName.remove(String.valueOf("sita"));
+		System.out.println(studName);
+		
+		// clear all element	
+         //studName.clear();
+         //System.out.println(studName);
+		
+		// update the element
+		studName.set(0,"raju");
+		System.out.println(studName);
+		
+		//found the value : yes/no,true/false
+		System.out.println(studName.contains("sita"));
+		System.out.println(studName.contains("raju"));
+		
+
+
+		
+	}
+
+}
