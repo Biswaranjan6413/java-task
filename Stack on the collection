@@ -1,0 +1,28 @@
+ package Stack1;
+
+import java.util.Stack;
+//stack means last in first out 
+public class Stack1 {
+
+	public static void main(String[] args) {
+		Stack<String> animals=new Stack<>();
+		animals.push("Lion");
+		animals.push("dog");
+		animals.push("horse");
+		animals.push("cat");
+		
+		// print all element
+		System.out.println("Stack : "+ animals);
+		
+		// this line only last element see
+		System.out.println(animals.peek());
+		
+		// after then which element come
+		animals.pop();// pop means element to come out 
+		System.out.println("Stack : "+ animals);
+		System.out.println(animals.peek());
+		
+		
+	}
+
+}
